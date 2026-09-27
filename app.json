@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "Jogo da Memória",
+    "slug": "JogoDaMemoria",
+    "version": "1.0.0",
+    "scheme": "jogodamemoria",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0E0F1F",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0E0F1F",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "O app precisa acessar suas fotos para cadastrar as figuras do jogo.",
+          "cameraPermission": "O app precisa acessar a câmera para fotografar as figuras do jogo."
+        }
+      ],
+      "expo-font"
+    ]
+  }
+}
